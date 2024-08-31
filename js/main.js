@@ -107,3 +107,25 @@
     
 })(jQuery);
 
+// toggle butoon to hide the syllabus
+// JavaScript to toggle the visibility of hidden rows
+document.getElementById('show-more-btn').addEventListener('click', function() {
+    // Select all elements with the 'hidden-row' class
+    var hiddenRows = document.querySelectorAll('.hidden-row');
+    
+    // Loop through the NodeList and toggle the display style
+    hiddenRows.forEach(function(row) {
+        if (row.style.display === 'none' || row.style.display === '') {
+            row.style.display = 'block'; // Show the row
+        } else {
+            row.style.display = 'none'; // Hide the row
+        }
+    });
+
+    // Optionally, change the button text based on visibility
+    if (this.innerText === 'View all') {
+        this.innerText = 'View less';
+    } else {
+        this.innerText = 'View all';
+    }
+});
