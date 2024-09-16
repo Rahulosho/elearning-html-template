@@ -149,7 +149,15 @@
         opacity: 1;
     }
 }
-
+@media (max-width: 418px) {
+    .book-logo {
+        display: none;
+    }
+    .navbar-brand{
+        padding: 0;
+        margin: 0;
+    }
+}
 
 /*** Header carousel ***/
 @media (max-width: 768px) {
@@ -228,6 +236,17 @@
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
+}
+
+
+/* utility class for background img */
+.img-bg-cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 
