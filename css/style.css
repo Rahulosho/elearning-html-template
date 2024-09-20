@@ -158,12 +158,18 @@
         opacity: 1;
     }
 }
-@media (max-width: 418px) {
-    .icon-small {
-        display: none;
+@media (max-width: 421px) {
+    .navbar-brand h2 {
+        font-size: 1rem;
     }
     
 }
+@media (max-width: 336px) {
+    .icon-small {
+        display: none;
+    }    
+}
+
 
 /*** Header carousel ***/
 @media (max-width: 768px) {
